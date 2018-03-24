@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/cedric
+DEVICE_PATH := device/motorola/montana
 
 TARGET_BOARD_VENDOR := motorola
 
@@ -55,7 +55,7 @@ TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-androidkernel-
-TARGET_KERNEL_CONFIG := cedric_defconfig
+TARGET_KERNEL_CONFIG := montana_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
 LZMA_RAMDISK_TARGETS := recovery
@@ -77,12 +77,12 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 TW_INCLUDE_CRYPTO := true
-TARGET_CRYPTFS_HW_PATH := device/motorola/cedric/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH := device/motorola/montana/cryptfs_hw
 TW_CRYPTO_USE_SYSTEM_VOLD := qseecomd
 
 # TWRP
 BOARD_SUPPRESS_SECURE_ERASE := true
-TARGET_RECOVERY_FSTAB := device/motorola/cedric/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/motorola/montana/twrp.fstab
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
